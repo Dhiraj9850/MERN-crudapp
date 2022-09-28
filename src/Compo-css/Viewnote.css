@@ -1,0 +1,22 @@
+.main-heading{
+  margin-top: 5rem;
+  text-align: center;
+}
+.view-note{
+  margin: 3rem auto;
+  border: 1px solid #9e9b9b;
+  width: 50%;
+  height: auto;
+  padding: 12px;
+  border-radius: 10px;
+  background-color:  #e6e6e6;
+  
+}
+.view-note h5{
+    color: rgb(64, 63, 63);
+}
+.view-note h5 span, .view-note h6 span{
+  font-weight: 600;
+  color: rgb(21, 21, 21);
+  margin-right: 8px;
+}

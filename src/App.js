@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import AddNotes from './Components/AddNotes';
+import Navbar from './Components/Navbar';
+import { Switch, Route } from 'react-router-dom';
+import Addform from './Components/Addform';
+import Editform from './Components/Editform';
+import Viewnotes from './Components/Viewnotes';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+
+   return (
+      <>
+         <Navbar />
+
+         <Switch>
+            <Route exact path="/">
+               <AddNotes />
+            </Route>
+
+            <Route exact path="/addform">
+               <Addform />
+            </Route>
+
+            <Route exact path="/editform/:id">
+               <Editform />
+            </Route>
+            <Route exact path="/viewnotes/:id">
+               <Viewnotes />
+            </Route>
+         </Switch>
+
+
+
+      </>
+   )
 }
 
-export default App;
+export default App

@@ -1,0 +1,35 @@
+.main-heading{
+    text-align: center;
+}
+.main-container{
+    margin-top: 1.5rem;
+}
+#alertbox{
+    margin-top: 3.2rem;
+}
+.add-data{
+    width:75%;
+    margin: auto;
+}
+.add-btn{
+    position: absolute;
+    right: 12rem;
+}
+.title-col{
+    width: 15rem;
+}
+.desc-col{
+    width: 25rem;
+}
+i{
+    font-weight: 600;
+}
+.table{
+    width: 75%;
+    margin: 5rem auto;
+    border: 2px solid #e6e6e6;
+}
+thead{
+    background-color: rgb(22, 48, 48);
+    color: white;
+}

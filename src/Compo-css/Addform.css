@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+:root{
+    --primary:rgb(11, 72, 72);
+    --secondary: #e6e6e6;
+    --dark:#131a26;
+    --light:rgb(224, 219, 219);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+  font-family: 'Lato', sans-serif;
+}
+.main-heading{
+  margin-top: 5rem;
+  text-align: center;
+}
+.add-note{
+  border: 1px solid #a6a6a6;
+  width: 40%;
+  margin:50px auto;
+  height: 50vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.note-title input{
+  width: 90%;
+  margin-left: 20px;
+  padding: 4px;
+  color: var(--dark);
+  outline: none;
+  border: 1px solid #a6a6a6;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+}
+.note-desc textarea{
+  width: 90%;
+  margin-left: 20px;
+  color: var(--dark);  
+  resize: none;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid #a6a6a6;
+  background-color: #f2f2f2;
+}
+label{
+  font-weight: 600;
+  margin: 5px 20px;
+  color: var(--primary);
+  font-size: 18px;
+}
+.submitbtn{
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 6px;
+  width: 80px;
+  border: none;
+  border-radius: 7px;
+  margin: 0.5rem 14rem;
+  transition: 0.7s;
+}
+.submitbtn:hover{
+  opacity: 0.9;
+}
